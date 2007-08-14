@@ -1,0 +1,8 @@
+inherit xorg
+
+PATCH_URI="
+	mirror://portage/app-doc/${PN}/files/65533-URL-interpolation.patch
+	mirror://portage/app-doc/${PN}/files/1.4-sgml-fixes.patch
+"
+
+MAKEOPTS+=" -j1"

@@ -3,13 +3,13 @@ xorg-docs
 Xorg documentation
 
 Build requirements:
-  cygwin-1.5.20-1
-  cygport-0.2.2-1
-  gawk-3.1.5-2
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
-  xorg-sgml-doctools-1.1-1
+  cygwin-1.5.24-2
+  cygport-0.3.5-1
+  gawk-3.1.5-4
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+  xorg-sgml-doctools-1.2-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -20,15 +20,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xorg-docs-1.2-X-src.tar.bz2
+  unpack xorg-docs-1.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xorg-docs-1.2-X.cygport all
+  cygport ./xorg-docs-1.4-X.cygport all
 
 This will create:
-  /usr/src/xorg-docs-1.2-X-src.tar.bz2
-  /usr/src/xorg-docs-1.2-X.tar.bz2
+  /usr/src/xorg-docs-1.4-X-src.tar.bz2
+  /usr/src/xorg-docs-1.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -109,10 +109,10 @@ Files included in the binary package:
   /usr/share/X11/doc/hardcopy/saver/saver.PS.gz
   /usr/share/X11/doc/hardcopy/xfs/design.PS.gz
   /usr/share/X11/doc/hardcopy/xtrans/Xtrans.PS.gz
-  /usr/share/doc/Cygwin/xorg-docs-1.2.README
-  /usr/share/doc/xorg-docs-1.2/ChangeLog
-  /usr/share/doc/xorg-docs-1.2/MAINTAINERS
-  /usr/share/doc/xorg-docs-1.2/README
+  /usr/share/doc/Cygwin/xorg-docs-1.4.README
+  /usr/share/doc/xorg-docs-1.4/ChangeLog
+  /usr/share/doc/xorg-docs-1.4/MAINTAINERS
+  /usr/share/doc/xorg-docs-1.4/README
   /usr/share/man/man7/Consortium.7.gz
   /usr/share/man/man7/Standards.7.gz
   /usr/share/man/man7/X.7.gz
@@ -124,6 +124,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4-1 -----
+Version bump for X11R7.3.
 
 ----- version 1.2-1 -----
 Version bump for X11R7.1.
