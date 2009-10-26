@@ -3,13 +3,14 @@ xorg-docs
 X.Org documentation
 
 Build requirements:
-  cygwin-1.5.24-2
-  cygport-0.3.5-1
-  gawk-3.1.5-4
-  make-3.81-1
-  pkg-config-0.21-1
+  cygwin-1.7.0-62
+  cygport-0.3.10-1
+  gawk-3.1.7-1
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
-  xorg-sgml-doctools-1.2-1
+  xorg-sgml-doctools-1.3-1
+  xorg-util-macros-1.3.0-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -20,110 +21,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xorg-docs-1.4-X-src.tar.bz2
+  unpack xorg-docs-1.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xorg-docs-1.4-X.cygport all
+  cygport ./xorg-docs-1.5-X.cygport all
 
 This will create:
-  /usr/src/xorg-docs-1.4-X-src.tar.bz2
-  /usr/src/xorg-docs-1.4-X.tar.bz2
+  /usr/src/xorg-docs-1.5-X-src.tar.bz2
+  /usr/src/xorg-docs-1.5-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/share/X11/doc/MAINTAINERS
-  /usr/share/X11/doc/hardcopy/BDF/bdf.PS.gz
-  /usr/share/X11/doc/hardcopy/CTEXT/ctext.PS.gz
-  /usr/share/X11/doc/hardcopy/FSProtocol/fsproto.PS.gz
-  /usr/share/X11/doc/hardcopy/ICCCM/icccm.PS.gz
-  /usr/share/X11/doc/hardcopy/ICCCM/icccm.idx.PS.gz
-  /usr/share/X11/doc/hardcopy/ICE/ICElib.PS.gz
-  /usr/share/X11/doc/hardcopy/ICE/ice.PS.gz
-  /usr/share/X11/doc/hardcopy/RX/RX.PS.gz
-  /usr/share/X11/doc/hardcopy/SM/SMlib.PS.gz
-  /usr/share/X11/doc/hardcopy/SM/xsmp.PS.gz
-  /usr/share/X11/doc/hardcopy/X11/xlib.PS.gz
-  /usr/share/X11/doc/hardcopy/X11/xlib.idx.PS.gz
-  /usr/share/X11/doc/hardcopy/XDMCP/xdmcp.PS.gz
-  /usr/share/X11/doc/hardcopy/XIM/xim.PS.gz
-  /usr/share/X11/doc/hardcopy/XKB/XKBlib.ps.gz
-  /usr/share/X11/doc/hardcopy/XKB/XKBproto.ps.gz
-  /usr/share/X11/doc/hardcopy/XLFD/xlfd.PS.gz
-  /usr/share/X11/doc/hardcopy/XPRINT/Xprint_FAQ.html
-  /usr/share/X11/doc/hardcopy/XPRINT/Xprint_FAQ.txt
-  /usr/share/X11/doc/hardcopy/XPRINT/Xprint_FAQ.xml
-  /usr/share/X11/doc/hardcopy/XPRINT/Xprint_old_FAQ.txt
-  /usr/share/X11/doc/hardcopy/XPRINT/dtprint_fspec.PS.gz
-  /usr/share/X11/doc/hardcopy/XPRINT/xp_library.PS.gz
-  /usr/share/X11/doc/hardcopy/XPRINT/xp_proto.PS.gz
-  /usr/share/X11/doc/hardcopy/XProtocol/proto.PS.gz
-  /usr/share/X11/doc/hardcopy/XProtocol/proto.idx.PS.gz
-  /usr/share/X11/doc/hardcopy/Xaw/widg.idx.PS.gz
-  /usr/share/X11/doc/hardcopy/Xaw/widgets.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/AppGroup.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/DPMS.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/DPMSLib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/bigreq.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/buffer.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/dbe.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/dbelib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/evi.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/lbx.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/lbx.html
-  /usr/share/X11/doc/hardcopy/Xext/lbxTOC.html
-  /usr/share/X11/doc/hardcopy/Xext/lbxalg.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/mit-shm.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/record.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/recordlib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/security.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/shape.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/shapelib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/sync.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/synclib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/tog-cup.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/xc-misc.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/xtest.PS.gz
-  /usr/share/X11/doc/hardcopy/Xext/xtestlib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xi/lib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xi/port.PS.gz
-  /usr/share/X11/doc/hardcopy/Xi/proto.PS.gz
-  /usr/share/X11/doc/hardcopy/Xmu/xmu.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/Xprt.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/analysis.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/appgroup.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/ddx.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/fontlib.PS.gz
-  /usr/share/X11/doc/hardcopy/Xserver/secint.PS.gz
-  /usr/share/X11/doc/hardcopy/Xt/intr.idx.PS.gz
-  /usr/share/X11/doc/hardcopy/Xt/intrinsics.PS.gz
-  /usr/share/X11/doc/hardcopy/Xv/video
-  /usr/share/X11/doc/hardcopy/Xv/xv-protocol-v2.PS
-  /usr/share/X11/doc/hardcopy/i18n/Framework.PS.gz
-  /usr/share/X11/doc/hardcopy/i18n/LocaleDB.PS.gz
-  /usr/share/X11/doc/hardcopy/i18n/Trans.PS.gz
-  /usr/share/X11/doc/hardcopy/man/man.PS.gz
-  /usr/share/X11/doc/hardcopy/rstart/rstart.PS.gz
-  /usr/share/X11/doc/hardcopy/saver/saver.PS.gz
-  /usr/share/X11/doc/hardcopy/xfs/design.PS.gz
-  /usr/share/X11/doc/hardcopy/xtrans/Xtrans.PS.gz
-  /usr/share/doc/Cygwin/xorg-docs-1.4.README
-  /usr/share/doc/xorg-docs-1.4/ChangeLog
-  /usr/share/doc/xorg-docs-1.4/MAINTAINERS
-  /usr/share/doc/xorg-docs-1.4/README
-  /usr/share/man/man7/Consortium.7.gz
-  /usr/share/man/man7/Standards.7.gz
-  /usr/share/man/man7/X.7.gz
-  /usr/share/man/man7/XOrgFoundation.7.gz
-  /usr/share/man/man7/XProjectTeam.7.gz
-  /usr/share/man/man7/Xprint.7.gz
-  /usr/share/man/man7/security.7.gz
-
-------------------
-
 Port Notes:
+
+----- version 1.5-1 -----
+Version bump for X11R7.5.
 
 ----- version 1.4-1 -----
 Version bump for X11R7.3.

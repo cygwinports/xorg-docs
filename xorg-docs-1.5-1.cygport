@@ -1,0 +1,5 @@
+inherit xorg
+
+# requires docbook-utils
+CYGCONF_ARGS="--disable-html --disable-pdf --disable-ps --disable-txt"
+MAKEOPTS+=" -j1"
