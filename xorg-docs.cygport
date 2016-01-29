@@ -1,5 +1,13 @@
 inherit xorg
 
+NAME="xorg-docs"
+VERSION=1.7
+RELEASE=1
+CATEGORY="X11 Doc"
+SUMMARY="X.Org documentation"
+DESCRIPTION="X.Org documentation"
+
 # I doubt anyone is printing the PS on Cygwin
 CYGCONF_ARGS="--enable-html --enable-pdf --disable-ps --enable-txt"
 MAKEOPTS+=" -j1"
+
